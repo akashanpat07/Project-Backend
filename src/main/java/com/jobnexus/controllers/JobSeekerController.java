@@ -69,7 +69,8 @@ public class JobSeekerController {
 		String encoded = Base64.getEncoder().encodeToString(resumeBytes);
 		return ResponseEntity.ok().body(encoded);
 	}
-
+	// Login to generate JWT 
+// Login to generate JWT 
 	// Login to generate JWT Token
 	@PostMapping("/authenticate")
 	public ResponseEntity<?> authenticateJobSeeker(@RequestBody JobSeekerCredsRequestDTO credsRequestDTO) {
